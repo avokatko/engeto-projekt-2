@@ -1,0 +1,50 @@
+/* General */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  /* Chyba při zarovnání prvků
+  justify-content: center; */
+  align-items: center;
+  background-color: #15304c;
+  height: 70px;
+}
+
+.logo {
+  flex-grow: 1;
+}
+
+.logo img {
+  width: 200px;
+  margin-left: 20px;
+}
+
+nav {
+  margin-right: 30px;
+}
+
+li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu-icon {
+  /* display: none; -> PROBLÉM S FUNKČNOSTÍ - DISPLAY: NONE UMÍSTNĚN DO QUERY.CSS */
+  margin-right: 30px;
+}
+
+.welcome {
+  background-image: url(/1.lekce_JS/Projekt_2/img/background.webp);
+  min-height: calc(100vh - 70px);
+  background-size: cover;
+  background-position: center;
+}
